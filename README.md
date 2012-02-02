@@ -35,11 +35,11 @@ Also if you dont have static ip you can use this dns python server by JimmyKane,
 	
      A. launch terminal (if you don't know how to do, then go to sleep ;P)
     
-     B. `cd ~`
+     B. 	cd ~
 	
-     C. `apt-get install git`
+     C. 	apt-get install git
 	
-     D. `git clone https://inlineframe@github.com/inlineframe/SecretSiri.git`
+     D. 	git clone https://inlineframe@github.com/inlineframe/SecretSiri.git
 
 **Setup all required stuff**
 
@@ -47,63 +47,67 @@ I Packaged all the setup scripts in 1 file:
 
 1. For ubuntu user (Must be logged in as root):
 
-	A.  `cd SecretSiri`
+	A.  	cd SecretSiri
 
-	B.	`chmod 777 ubuntu.sh`  
+	B.	chmod 777 ubuntu.sh
 
-	C.	`./ubuntu.sh`  	
+	C.	./ubuntu.sh	
 
 2. For Debian user (Must be logged in as root):   
 
-	A.  `cd SecretSiri`
+	A.  	cd SecretSiri
 
-	B.	`chmod 777 debian.sh`  
+	B.	chmod 777 debian.sh 
 
-	C.	`./debian.sh` 
+	C.	./debian.sh
 
 
 **Replacing Openssl (For adding 2 common names)** 
 
     1. Making OpenSSL backup
     
-        `sudo mv /etc/ssl/openssl.cnf /etc/ssl/openssl.cnf.bak`
+        sudo mv /etc/ssl/openssl.cnf /etc/ssl/openssl.cnf.bak
 
     2. Adding new OpenSSL
 
-        `sudo mv openssl.cnf /etc/ssl/openssl.cnf`
+        sudo mv openssl.cnf /etc/ssl/openssl.cnf
          
 
 **Generating Certificates**
     
 	1. Changing directory
 
-        `cd Server`
+        cd Server
 
     2. Changing permissions
 
-        `chmod +x create.sh`
+        chmod +x create.sh
 
     3. Generating certificates
 
-        `./create.sh`
+        ./create.sh
     
     Note: The 1st common name: guzzoni.apple.com, 2nd common name: IP/DNS 
 
 	
 **Installing Certificates**
        Mail your certificate to your self and install it on both (iPhone 4S, old_iDevice)
-	It's located in  `home/USERNAME/SecretSiri/Server/ca.crt`
+       
+	It's located in  home/USERNAME/SecretSiri/Server/ca.crt
 
 	
 **Making the keys directory to dump keys**
-        `cd /root/SecretSiri`
-	`mkdir keys`  
+
+        cd /root/SecretSiri
+	
+	mkdir keys 
 
 
 **Dumping 4S keys**
    
     1. Changing directory
-    `cd Server` 
+    
+    	cd Server 
 
     2. Changing the permission
 
@@ -139,11 +143,11 @@ Now you should see some writings on the Screen now, and your 4S Keys must be dum
 
     1. Changing Permissions
     
-    `sudo chmod +x reopen2.sh`
+    sudo chmod +x reopen2.sh
 
 	2. Running SecretSiri Server
 
-    `./reopen2.sh`
+    ./reopen2.sh
 
 
 **Running Siri on old_iDevices**
